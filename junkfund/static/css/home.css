@@ -1,0 +1,47 @@
+body{
+    background-image: url("/static/images/background_home.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% auto;
+}
+
+.action-btn{
+    background: white;
+    border-radius: 12px;
+    padding: 4px;
+    width: 120px;
+}
+
+.project-btn{
+    background: #B12A2A;
+    padding: 3px;
+    border: none;
+    color: white;
+    width: 250px;
+}
+
+#yellow-side{
+    position: absolute;
+    z-index: -1;
+    left: -500px;
+    top: -50px;
+}
+
+#blue-side{
+    position: absolute;
+    z-index: -1;
+    right: -100px;
+    top: 0px;
+}
+
+#landing_page{
+    text-align: center;
+    color: white;
+}
+
+.action-section{
+    display: flex; 
+    flex-direction: column;
+}

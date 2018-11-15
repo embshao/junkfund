@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block extra_css %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">  
+{% endblock %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block content %}
+<div class="container" id="landing_page">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 action-section" id="social_project_action">
+            <img src="{% static 'images/give_people.svg' %}" width="350" height="auto">
+            <h1>Give with a purpose</h1>
+            <h2>Help us do good work</h2>
+            <button class="action-btn">Give</button>
+            <button class="project-btn">Social project of the month</button>
+            <!-- <img src="{% static 'images/yellow_side.svg' %}" width="auto" height="1100" id="yellow-side"> -->  
+        </div>
+
+        <div class="col-sm-12 col-md-6 action-section" id="entrepreneur_project_action">
+            <h1>Invest in an Entrepreneur</h1>
+            <h2>Assist us to fund start ups</h2>
+            <button class="action-btn">Invest</button>
+            <img src="{% static 'images/spaceship_people.svg' %}" width="300" height="auto">
+            <button class="project-btn">Entrepreneur of the month</button>
+            <!-- <img src="{% static 'images/blue_side.svg' %}" width="auto" height="500" id="blue-side"> -->
+        </div>
+    </div>
+</div>
+    
+{% endblock %}

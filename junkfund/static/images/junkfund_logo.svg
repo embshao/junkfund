@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1956.218 1208.762">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e6ba25;
+      }
+
+      .cls-1, .cls-2 {
+        font-size: 666px;
+        font-family: Montserrat-ExtraBold, Montserrat;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        fill: #b12a2a;
+      }
+
+      .cls-3 {
+        fill: #20b2be;
+      }
+    </style>
+  </defs>
+  <g id="Group_79" data-name="Group 79" transform="translate(-344.773 -212.802)">
+    <text id="Junk" class="cls-1" transform="translate(358.773 857.802)"><tspan x="0" y="0">Junk</tspan></text>
+    <text id="_.fund" data-name=".fund" class="cls-2" transform="translate(446.991 1254.565)"><tspan x="0" y="0">.</tspan><tspan class="cls-3" y="0">fund</tspan></text>
+  </g>
+</svg>
