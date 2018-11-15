@@ -1,8 +1,7 @@
 from django.shortcuts import render, redirect
+from contact.forms import ContactForm
 
-from .forms import ContactForm
-
-def contact(request):
+def home(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -11,4 +10,4 @@ def contact(request):
     else:
         form = ContactForm()
     context = {'form': form}
-    return render(request, 'contact/contact.html', context)
+    return render(request, 'home/home_page.html', context)
