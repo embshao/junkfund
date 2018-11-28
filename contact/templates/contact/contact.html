@@ -1,17 +1,39 @@
 {% extends "base.html" %}
 
 {% load wagtailcore_tags %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock %}
 
 {% block body_class %}{% endblock %}
 
 {% block content %}
 
-<div>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">SUBMIT</button>
-    </form>
+
+
+<div class="row">
+    <div class="col-sm-12 col-md-7">
+        <div id="contact-section-1-wrapper">
+            <h2>Want to know more about what we do?</h2>
+            <div id="border-contact"></div>
+            <!-- <img src="{% static 'images/border-contact.svg'%}" alt="" id="contact-line"> -->
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-5">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="col-sm-12">
+        <div id="rlabs-logo-wrapper">
+            <img src="{% static 'images/rlabs-logo.svg' %}" alt="" width='200px;'>
+        </div>
+    </div>
 </div>
   
 {% endblock %}

@@ -1,0 +1,27 @@
+#donate-section-1{
+    text-align: center;
+    margin-top: 120px;
+}
+
+#donate-section-2{
+    margin-top: 100px;
+}
+
+#donate-section-1-wrapper, #donate-section-2-wrapper{
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+.action-btn{
+    margin-top: 20px;
+}
+
+#world-heart{
+    position: absolute;
+    z-index: -1;
+    top: -100px;
+}
+
+h1{
+ font-weight: bold;
+}

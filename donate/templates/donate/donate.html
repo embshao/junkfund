@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/donate.css' %}">
+{% endblock %}
+
+{% block body_class %}{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-12 col-md-6" id="donate-section-1">
+        <div id="donate-section-1-wrapper">
+            <h1>Give with a purpose</h1>
+            <img src="{% static 'images/yellow-bar.svg' %}">
+            <button class="action-btn">Give</button>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6" id="donate-section-2">
+        <div id="donate-section-2-wrapper">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+            <p>et quas molestias excepturi sint occaecati cupiditate sunt in culpa qui officia deserunt mollitia animi, id est fuga. Et harum quidem rerum facilis est et expedita Nam libero tempore, cum soluta nobis est eligendi</p>
+            <img src="{% static 'images/world-heart.svg' %}" id="world-heart" width="auto" height="475px;">
+        </div>
+    </div>
+</div>
+  
+{% endblock %}

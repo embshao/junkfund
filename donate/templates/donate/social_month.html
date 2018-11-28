@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/month.css' %}">
+{% endblock %}
+
+{% block body_class %}{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-12 col-md-5">
+
+        <div class="slideshow-container" id="donate-carousel-container">
+                <div class="mySlides">
+                  <!-- <div class="numbertext">1 / 3</div> -->
+                  <img src="{% static 'images/about-1.png' %}" style="width:100%">
+                  <!-- <div class="text">Caption Text</div> -->
+                </div>
+                
+                <div class="mySlides">
+                  <img src="{% static 'images/about-2.png' %}" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                  <img src="{% static 'images/about-3.png' %}" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+    </div>
+    <div class="col-sm-12 col-md-7" >
+        <img src="{% static 'images/hand-heart.svg' %}" width="560" height="auto" id="hand-heart">
+        <div id="donate-text-container">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+            <p>Et quas molestias excepturi sint occaecati cupiditate sunt in culpa qui officia deserunt mollitia animi, id est fuga. Et harum quidem rerum facilis est et expedita Nam libero tempore, cum soluta nobis est eligendi.</p>
+            <div class="btn-wrapper">
+                <button class="action-btn">Invest</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" id="donate-section-2">
+        <div class="col-sm-12 col-md-5">
+    
+            <div class="slideshow-container" id="donate-carousel-container">
+                    <div class="mySlides2">
+                      <img src="{% static 'images/donate-1.png' %}" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides2">
+                      <img src="{% static 'images/donate-2.png' %}" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides2">
+                      <img src="{% static 'images/donate-3.png' %}" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+    
+        </div>
+        <div class="col-sm-12 col-md-7" >
+            <img src="{% static 'images/blue-gear.svg' %}" width="" height="750" id="blue-gear">
+            <div id="donate-text-container">
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                <p>Et quas molestias excepturi sint occaecati cupiditate sunt in culpa qui officia deserunt mollitia animi, id est fuga. Et harum quidem rerum facilis est et expedita Nam libero tempore, cum soluta nobis est eligendi.</p>
+                <div class="btn-wrapper">
+                    <button class="action-btn">Invest</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  
+{% endblock %}

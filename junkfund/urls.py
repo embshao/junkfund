@@ -19,6 +19,7 @@ urlpatterns = [
     # Non-Wagtail Apps
     url(r'^apply/', include('apply.urls')),
     url(r'^contact/', include('contact.urls')),
+    url(r'^donate/', include('donate.urls')),
 
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's page serving mechanism. This should be the last pattern in
