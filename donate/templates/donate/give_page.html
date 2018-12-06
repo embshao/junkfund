@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/donate.css' %}">
 {% endblock %}
 
-{% block body_class %}{% endblock %}
+{% block body_class %}template-donatepage{% endblock %}
 
 {% block content %}
 
@@ -21,8 +21,7 @@
     </div>
     <div class="col-sm-12 col-md-6" id="donate-section-2">
         <div id="donate-section-2-wrapper">
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
-            <p>et quas molestias excepturi sint occaecati cupiditate sunt in culpa qui officia deserunt mollitia animi, id est fuga. Et harum quidem rerum facilis est et expedita Nam libero tempore, cum soluta nobis est eligendi</p>
+            <p>{{ page.give_statement|richtext  }}</p>
             <img src="{% static 'images/world-heart.svg' %}" id="world-heart" width="auto" height="475px;">
         </div>
     </div>

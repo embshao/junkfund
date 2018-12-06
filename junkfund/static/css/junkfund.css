@@ -19,6 +19,8 @@ body{
     border-radius: 12px;
     padding: 4px;
     width: 120px;
+    color: black;
+    text-decoration: none;
 }
 
 .action-btn:focus {
@@ -27,18 +29,11 @@ body{
 
 .action-btn:hover{
     background-color: #bbb;
-}
-
-.action-btn a{
     color: black;
     text-decoration: none;
 }
 
-.action-btn a:hover{
-    color: black;
-    text-decoration: none;
-}
-.action-btn a:visited{
+.action-btn:visited{
     color: black;
     text-decoration: none;
 }

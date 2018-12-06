@@ -33,6 +33,11 @@ h2{
     margin-top: 25px;
 }
 
+.project-btn a{
+    text-decoration: none;
+    color: white;
+}
+
 #yellow-side{
     position: absolute;
     z-index: -1;
@@ -55,4 +60,8 @@ h2{
 .action-section{
     display: flex; 
     flex-direction: column;
+}
+
+#origin-statement, #mission-statement{
+    color: black;
 }

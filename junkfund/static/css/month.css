@@ -124,8 +124,8 @@ img {vertical-align: middle;}
 #blue-gear{
   position: absolute;
   z-index: -1;
-  top: 400px;
-  margin-left: -90px;
+  top: -200px;
+  margin-left: 0px;
 }
 
 #donate-section-2{

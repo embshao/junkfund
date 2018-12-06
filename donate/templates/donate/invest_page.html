@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/donate.css' %}">
+{% endblock %}
+
+{% block body_class %}{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <!-- <img src="{% static 'images/rocket-blue.svg' %}" id="rocket-blue" width="auto" height="475px;"> -->
+    <div class="col-sm-12 col-md-6" id="donate-section-1">
+        <div id="donate-section-1-wrapper">
+            <h1>Invest in a Business</h1>
+            <img src="{% static 'images/blue-bar.svg' %}">
+            <button class="action-btn">Invest</button>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6" id="donate-section-2">
+        <div id="donate-section-2-wrapper">
+            <p>{{ page.invest_statement|richtext }}</p>
+        </div>
+    </div>
+</div>
+  
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/month.css' %}">
+{% endblock %}
+
+{% block body_class %}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-12 col-md-5">
+        <div class="slideshow-container" id="donate-carousel-container">
+            {% for item in page.gallery_images.all %}
+                <div class="mySlides">
+                    {% image item.image fill-320x240 %}
+                    <div class="text">{{ item.caption }}</div>
+                </div>
+            {% endfor %}
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+        </div>
+        <br>        
+        <div style="text-align:center">
+            {% for item in page.gallery_images.all %}
+                <span class="dot" onclick='currentSlide( {{ forloop.counter }} )'></span> 
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-md-7" >
+        <img src="{% static 'images/hand-heart.svg' %}" width="560" height="auto" id="hand-heart">
+        <div id="donate-text-container">
+            <p>{{ page.body|richtext }}</p>
+            <div class="btn-wrapper">
+                <a href=""><button class="action-btn">Invest</button></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}

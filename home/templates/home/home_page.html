@@ -12,12 +12,12 @@
 {% block content %}
 <div class="container" id="landing_page">
     <div class="row">
-        <div class="col-sm-12 col-md-5 action-section" id="social_project_action" style="background-color: yellow;">
-            <img src="{% static 'images/give_people.svg' %}" width="390" height="auto" class="center">
-            <h1 class="center">Giving with a purpose</h1>
+        <div class="col-sm-12 col-md-5 action-section" id="social_project_action">
+            <img src="{% static 'images/give_people.svg' %}" width="auto" height="200" class="center">
+            <h1 class="center">Giving with a </br> purpose</h1>
             <h2 class="center">Help us do good work</h2>
-            <button class="action-btn center"><a href="/donate/">Give</a></button>
-            <button class="project-btn center">Social project of the month</button>
+            <a href="/invest"><button class="action-btn center">Give</button></a>
+            <a href="/social-project-month/"><button class="project-btn center">Social project of the month</button></a>
             <!-- <img src="{% static 'images/yellow_side.svg' %}" width="auto" height="1100" id="yellow-side"> -->  
         </div>
 
@@ -25,24 +25,22 @@
         </div>
 
         <div class="col-sm-12 col-md-5 action-section" id="entrepreneur_project_action">
-            <h1 class="center">Invest in an Entrepreneur</h1>
+            <h1 class="center">Invest in an </br> Entrepreneur</h1>
             <h2 class="center">Assist us to fund start ups</h2>
-            <button class="action-btn center">Invest</button>
-            <img src="{% static 'images/spaceship_people.svg' %}" width="300" height="auto" class="center">
-            <button class="project-btn center">Entrepreneur of the month</button>
+            <a href="/give/"><button class="action-btn center">Invest</button></a>
+            <img src="{% static 'images/spaceship_people.svg' %}" width="auto" height="200" class="center">
+            <a href="/entrepreneurial-project-month/"><button class="project-btn center">Entrepreneur of the month</button></a>
             <!-- <img src="{% static 'images/blue_side.svg' %}" width="auto" height="500" id="blue-side"> -->
         </div>
 
-        <div class="col-sm-12 col-md-6">
-            <p>
-                To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?”
-            </p>
+        <div class="col-sm-12 col-md-6" id="origin-statement">
+            <p>{{ page.origin_statement|richtext }}</p>
             <h1>Why we started?</h1>
         </div>
 
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-6" id="mission-statement">
             <h1>Mission</h1>
-            <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?”</p>
+            <p>{{ page.mission_statement|richtext }}</p>
         </div>
     </div>
 </div>
